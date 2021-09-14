@@ -28,6 +28,7 @@
                 <th>NIM</th>
                 <th>Tanggal Lahir</th>
                 <th>Jurusan</th>
+                <th colspan="2">Aksi</th>
             </tr>
 
             <?php
@@ -39,6 +40,18 @@
                     <td><?= $mhs->nim ?></td>
                     <td><?= $mhs->tgl_lahir ?></td>
                     <td><?= $mhs->jurusan ?></td>
+                    <!-- button delete -->
+                    <td onclick="javascript: return confirm('Anda yakin hapus?')">
+                        <?= anchor('mahasiswa/hapus/' . $mhs->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>
+                        </div>') ?>
+                    </td>
+
+                    <!-- button edit -->
+                    <td>
+                        <div class="btn btn-primary btn-sm">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>
