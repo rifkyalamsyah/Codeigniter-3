@@ -42,15 +42,11 @@
                     <td><?= $mhs->jurusan ?></td>
                     <!-- button delete -->
                     <td onclick="javascript: return confirm('Anda yakin hapus?')">
-                        <?= anchor('mahasiswa/hapus/' . $mhs->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>
-                        </div>') ?>
+                        <?= anchor('mahasiswa/hapus/' . $mhs->id, '<div class="btn btn-danger btn-sm"> <i class="fa fa-trash"></i> </div>') ?>
                     </td>
-
                     <!-- button edit -->
                     <td>
-                        <div class="btn btn-primary btn-sm">
-                            <i class="fa fa-edit"></i>
-                        </div>
+                        <?= anchor('mahasiswa/edit/' . $mhs->id, '<div class="btn btn-primary btn-sm"> <i class="fa fa-edit"></i> </div>') ?>
                     </td>
                 </tr>
             <?php endforeach; ?>
@@ -97,7 +93,7 @@
                         </div>
 
                         <!-- button -->
-                        <button type="reset" class="btn btn-danger" data-dismiss="modal">Reset</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
                         <button type="submit" class="btn btn-primary">Simpan</button>
 
                     </form>
