@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
         <img src="<?php echo base_url() ?>assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">SIAKAD</span>
     </a>
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-graduation-cap"></i>
                         <p>
                             Mahasiswa
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Dosen
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
                             Jadwal Kuliah
@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-university"></i>
                         <p>
                             Jurusan
@@ -76,7 +76,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-lock"></i>
                         <p>
                             Ganti Password
@@ -84,7 +84,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             Logout
