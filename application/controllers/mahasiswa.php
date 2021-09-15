@@ -22,6 +22,21 @@ class Mahasiswa extends CI_Controller
         $alamat     = $this->input->post('alamat');
         $email      = $this->input->post('email');
         $no_telp    = $this->input->post('no_telp');
+        $foto       = $_FILES['foto'];
+
+        if ($foto = '') {
+        } else {
+            $config['upload_path']  = './assets/foto';
+            $config['allow_types']  = 'jpeg | jpg | png | gif';
+
+            $this->load->initialize('upload', $config);
+            if (!$this->upload->do_upload('foto')) {
+                echo "Upload Gagal";
+                die();
+            } else {
+                $foto = $this->upload->data('file_name');
+            }
+        }
 
         $data = [
             'nama'      => $nama,
@@ -30,7 +45,8 @@ class Mahasiswa extends CI_Controller
             'jurusan'   => $jurusan,
             'alamat'    => $alamat,
             'email'     => $email,
-            'no_telp'   => $no_telp
+            'no_telp'   => $no_telp,
+            'foto'      => $foto
         ];
 
         $this->m_mahasiswa->input_data($data, 'tb_mahasiswa');

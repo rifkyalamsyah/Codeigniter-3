@@ -70,55 +70,61 @@
                 </div>
                 <div class="modal-body">
                     <!-- form -->
-                    <form action="<?php echo base_url() . 'mahasiswa/tambah_aksi'; ?>" method="post">
 
-                        <!-- form input -->
-                        <div class="form-group">
-                            <label for="">Nama</label>
-                            <input type="text" name="nama" class="form-control">
-                        </div>
+                    <?php echo form_open_multipart('mahasiswa/tambah_aksi'); ?>
 
-                        <div class="form-group">
-                            <label for="">NIM</label>
-                            <input type="text" name="nim" class="form-control">
-                        </div>
+                    <!-- form input -->
+                    <div class="form-group">
+                        <label for="">Nama</label>
+                        <input type="text" name="nama" class="form-control">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="">Tanggal Lahir</label>
-                            <input type="date" name="tgl_lahir" class="form-control">
-                        </div>
+                    <div class="form-group">
+                        <label for="">NIM</label>
+                        <input type="text" name="nim" class="form-control">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="">Jurusan</label>
-                            <!-- <input type="text" name="jurusan" class="form-control"> -->
-                            <select class="form-control" name="jurusan">
-                                <option>Informatika</option>
-                                <option>Teknik Informatika</option>
-                                <option>Teknik Komputer</option>
-                                <option>Sistem Informasi</option>
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="">Tanggal Lahir</label>
+                        <input type="date" name="tgl_lahir" class="form-control">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="">Alamat</label>
-                            <input type="text" name="alamat" class="form-control">
-                        </div>
+                    <div class="form-group">
+                        <label for="">Jurusan</label>
+                        <!-- <input type="text" name="jurusan" class="form-control"> -->
+                        <select class="form-control" name="jurusan">
+                            <option>Informatika</option>
+                            <option>Teknik Informatika</option>
+                            <option>Teknik Komputer</option>
+                            <option>Sistem Informasi</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="email" name="email" class="form-control">
-                        </div>
+                    <div class="form-group">
+                        <label for="">Alamat</label>
+                        <input type="text" name="alamat" class="form-control">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="">No. Telp</label>
-                            <input type="text" name="no_telp" class="form-control">
-                        </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
 
-                        <!-- button -->
-                        <button type="reset" class="btn btn-danger">Reset</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    <div class="form-group">
+                        <label for="">No. Telp</label>
+                        <input type="text" name="no_telp" class="form-control">
+                    </div>
 
-                    </form>
+                    <div class="form-group">
+                        <label for="">Upload Foto</label>
+                        <input type="file" name="foto" class="form-control">
+                    </div>
+
+                    <!-- button -->
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+
+                    <?php echo form_close(); ?>
                 </div>
             </div>
         </div>

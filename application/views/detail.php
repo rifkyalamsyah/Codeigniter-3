@@ -31,6 +31,12 @@
                 <th>NO. Telp</th>
                 <td><?= $detail->no_telp ?></td>
             </tr>
+
+            <tr>
+                <td>
+                    <img src="<?= base_url(); ?> assets/foto/<?= $detail->foto; ?>" alt="foto" width="90" height="100">
+                </td>
+            </tr>
         </table>
 
         <a href="<?= base_url('mahasiswa/index'); ?>" class="btn btn-primary">Kembali</a>
