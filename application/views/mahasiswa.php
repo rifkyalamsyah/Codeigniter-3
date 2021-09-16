@@ -42,7 +42,7 @@
                     <td><?= $mhs->jurusan ?></td>
                     <!-- button detail -->
                     <td class="text-center">
-                        <?= anchor('mahsiswa/detail/' . $mhs->id, '<div class="btn btn-success btn-sm"><i class="fa fa-search-plus"></i></div>') ?>
+                        <?= anchor('mahasiswa/detail/' . $mhs->id, '<div class="btn btn-success btn-sm"><i class="fa fa-search-plus"></i></div>') ?>
                     </td>
                     <!-- button edit -->
                     <td class="text-center">
